@@ -12,4 +12,4 @@ spring:
           ssl:
             enable: true
 demo:
-  test: ${DEMO_ENV}
+  test: ${DEMOTEST}

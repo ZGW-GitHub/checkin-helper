@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  DEMO_ENV: ${{secrets.DEMO}}
+  DEMOTEST: ${{ secrets.DEMOTEST }}
 
 # 作业s
 jobs:
