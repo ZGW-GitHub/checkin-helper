@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class CheckinHelperApplicationTest {
 
     @Test
-    void contextLoad() {
+    public void contextLoad() {
         System.err.println("Test - contextLoad test");
     }
 
