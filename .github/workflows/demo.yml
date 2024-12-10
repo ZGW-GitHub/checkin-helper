@@ -33,4 +33,4 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       # 步骤：运行测试
       - name: Run tests with Maven
-        run: mvn -B test --file pom.xml
+        run: mvn clean test -B
