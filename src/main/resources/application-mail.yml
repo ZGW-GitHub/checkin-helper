@@ -1,0 +1,13 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 465
+    protocol: smtp
+    username: todo
+    password: todo
+    test-connection: false
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
