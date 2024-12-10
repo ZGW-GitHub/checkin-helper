@@ -34,7 +34,7 @@ public class CheckinJob {
 	// private TaskScheduler taskScheduler;
 	//
 	// @SneakyThrows
-	// // @Scheduled(cron = "0 30 7 * * ?", zone = "Asia/Shanghai")
+    // @Scheduled(cron = "0 30 7 * * ?", zone = "Asia/Shanghai")
 	// public void checkin() {
 	//     ZonedDateTime currentTime = LocalDateTime.now().atZone(ZoneId.systemDefault());
 	//     ZonedDateTime latestTime = currentTime.plusHours(1);
