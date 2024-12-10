@@ -3,13 +3,11 @@ spring:
     host: smtp.qq.com
     port: 465
     protocol: smtp
-    username: todo
-    password: todo
+    username: ${MAIL_SENDER}
+    password: ${MAIL_SENDER_PASSWORD}
     test-connection: false
     properties:
       mail:
         smtp:
           ssl:
             enable: true
-demo:
-  test: ${DEMOTEST}

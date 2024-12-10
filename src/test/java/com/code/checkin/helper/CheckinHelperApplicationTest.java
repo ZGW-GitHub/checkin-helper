@@ -1,5 +1,6 @@
 package com.code.checkin.helper;
 
+import com.code.checkin.helper.service.CheckinActuator;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -14,11 +15,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class CheckinHelperApplicationTest {
 
     @Resource
-    private DemoConfig demoConfig;
+    private CheckinActuator checkinActuator;
 
     @Test
     public void contextLoadTest() {
-        System.err.println("Test - contextLoad test -" + demoConfig.getDemo() + "- ov");
+        checkinActuator.checkin();
     }
 
 }

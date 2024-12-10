@@ -8,7 +8,9 @@ on:
   workflow_dispatch:
 
 env:
-  DEMOTEST: ${{ secrets.DEMOTEST }}
+  MAIL_SENDER: ${{ secrets.MAIL_SENDER }}
+  MAIL_SENDER_PASSWORD: ${{ secrets.MAIL_SENDER_PASSWORD }}
+  MAIL_RECIPIENT: ${{ secrets.MAIL_RECIPIENT }}
 
 # 作业s
 jobs:
