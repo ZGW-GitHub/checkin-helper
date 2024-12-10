@@ -17,13 +17,16 @@ jobs:
       # 步骤：检出代码
       - name: Checkout code
         uses: actions/checkout@v3
-      # 步骤：设置 Java 环境为 JDK 21，并使用 Corretto 发行版，缓存 Maven
+      # 步骤：设置 Java 环境为 JDK 21，并使用 Corretto 发行版
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
           java-version: '21'
-          distribution: 'corretto'
-          cache: 'maven'
+          distribution: 'temurin'
+      - name: Set up Maven
+        uses: apache/maven-wrapper-action@v3
+        with:
+          maven-version: '3.9.9'
       # 步骤：缓存 Maven 包
       #      - name: Cache Maven packages
       #        uses: actions/cache@v3
