@@ -11,3 +11,5 @@ spring:
         smtp:
           ssl:
             enable: true
+demo:
+  test: ${DEMO_ENV}

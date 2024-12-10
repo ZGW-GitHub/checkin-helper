@@ -7,6 +7,9 @@ on:
     - cron: "30 22 * * *" # 北京时间上午06:30
   workflow_dispatch:
 
+env:
+  DEMO_ENV: ${{secrets.DEMO}}
+
 # 作业s
 jobs:
   # job
@@ -24,13 +27,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
-      # 步骤：缓存 Maven 包
-      #      - name: Cache Maven packages
-      #        uses: actions/cache@v3
-      #        with:
-      #          path: ~/.m2
-      #          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-      #          restore-keys: ${{ runner.os }}-m2
       # 步骤：运行测试
       - name: Run tests with Maven
         run: mvn clean test
