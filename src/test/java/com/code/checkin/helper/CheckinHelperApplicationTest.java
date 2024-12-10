@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class CheckinHelperApplicationTest {
 
     @Test
-    public void contextLoad() {
+    public void contextLoadTest() {
         try {
             log.info("Test - contextLoad test");
             TimeUnit.SECONDS.sleep(1);
