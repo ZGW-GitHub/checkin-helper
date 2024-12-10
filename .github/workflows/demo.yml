@@ -25,12 +25,12 @@ jobs:
           distribution: 'corretto'
           cache: 'maven'
       # 步骤：缓存 Maven 包
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
+      #      - name: Cache Maven packages
+      #        uses: actions/cache@v3
+      #        with:
+      #          path: ~/.m2
+      #          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+      #          restore-keys: ${{ runner.os }}-m2
       # 步骤：运行测试
       - name: Run tests with Maven
         run: mvn clean test -B
