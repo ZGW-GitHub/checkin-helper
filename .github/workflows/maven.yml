@@ -2,9 +2,24 @@
 name: demo
 
 # 何时触发工作流
+#- cron: "34 7 * * MON"
+#- cron: "43 7 * * TUE"
+#- cron: "51 7 * * WED"
+#- cron: "30 7 * * THU"
+#- cron: "54 7 * * FRI"
+#- cron: "43 7 * * SAT"
+#- cron: "39 7 * * SUN"
 on:
   schedule:
-    - cron: "30 22 * * *" # 北京时间上午06:30
+    # 可以使用 https://crontab.guru 来帮助生成并确认它将在何时运行
+    # - cron: "30 22 * * *" # 22+8=北京时间上午6:30
+    - cron: "34 23 * * MON"
+    - cron: "43 23 * * TUE"
+    - cron: "51 23 * * WED"
+    - cron: "30 23 * * THU"
+    - cron: "54 23 * * FRI"
+    - cron: "43 23 * * SAT"
+    - cron: "39 23 * * SUN"
   workflow_dispatch:
 
 env:
