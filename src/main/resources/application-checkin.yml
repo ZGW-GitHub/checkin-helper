@@ -1,22 +1,22 @@
 checkin:
   accountList:
-    #    - type: "GLaDOS"
-    #      user: ${FREE_CHECKIN_ONE_USER}
-    #      url: ${FREE_CHECKIN_ONE_URL}
-    #      token: ${FREE_CHECKIN_ONE_TOKEN}
-    #      cookie: ${FREE_CHECKIN_ONE_COOKIE}
-    #      checkin: ${FREE_CHECKIN_ONE_ENABLE}
+    # - type: "GLaDOS"
+    #   user: ${FREE_CHECKIN_ONE_USER}
+    #   url: ${FREE_CHECKIN_ONE_URL}
+    #   token: ${FREE_CHECKIN_ONE_TOKEN}
+    #   cookie: ${FREE_CHECKIN_ONE_COOKIE}
+    #   checkin: ${FREE_CHECKIN_ONE_ENABLE}
     - type: "GLaDOS"
       user: ${FREE_CHECKIN_TWO_USER}
       url: ${FREE_CHECKIN_TWO_URL}
       token: ${FREE_CHECKIN_TWO_TOKEN}
       cookie: ${FREE_CHECKIN_TWO_COOKIE}
       checkin: ${FREE_CHECKIN_TWO_ENABLE}
-  #    - type: "GLaDOS"
-  #      user: ${free_checkin_three_user}
-  #      url: ${free_checkin_three_url}
-  #      token: ${free_checkin_three_token}
-  #      cookie: ${free_checkin_three_cookie}
-  #      checkin: ${free_checkin_three_enable}
+    # - type: "GLaDOS"
+    #   user: ${FREE_CHECKIN_THREE_USER}
+    #   url: ${FREE_CHECKIN_THREE_URL}
+    #   token: ${FREE_CHECKIN_THREE_TOKEN}
+    #   cookie: ${FREE_CHECKIN_THREE_COOKIE}
+    #   checkin: ${FREE_CHECKIN_THREE_ENABLE}
   sender-mail: ${MAIL_SENDER}
   recipient-mail: ${MAIL_RECIPIENT}
