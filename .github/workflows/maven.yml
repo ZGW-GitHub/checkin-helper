@@ -1,5 +1,5 @@
 # 流程名称
-name: demo
+name: Checkin
 
 # 何时触发工作流
 #- cron: "34 7 * * MON"
