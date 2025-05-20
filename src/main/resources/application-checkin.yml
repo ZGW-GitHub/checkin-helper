@@ -1,11 +1,11 @@
 checkin:
   accountList:
-    # - type: "GLaDOS"
-    #   user: ${FREE_CHECKIN_ONE_USER}
-    #   url: ${FREE_CHECKIN_ONE_URL}
-    #   token: ${FREE_CHECKIN_ONE_TOKEN}
-    #   cookie: ${FREE_CHECKIN_ONE_COOKIE}
-    #   checkin: ${FREE_CHECKIN_ONE_ENABLE}
+    - type: "GLaDOS"
+      user: ${FREE_CHECKIN_ONE_USER}
+      url: ${FREE_CHECKIN_ONE_URL}
+      token: ${FREE_CHECKIN_ONE_TOKEN}
+      cookie: ${FREE_CHECKIN_ONE_COOKIE}
+      checkin: ${FREE_CHECKIN_ONE_ENABLE}
     - type: "GLaDOS"
       user: ${FREE_CHECKIN_TWO_USER}
       url: ${FREE_CHECKIN_TWO_URL}
